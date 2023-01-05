@@ -19,7 +19,7 @@ With above in mind it's obvious that all configuration is expected to be provide
 by included configuration files. That's why entrypoint script fails with error
 when there are none.
 
-Distribution default directory ``/etc/nginx`` and its files are preserverd.
+Distribution default directory ``/etc/nginx`` and its files are preserved.
 
 ## Volumes
 There are two volumes by default, one for configuration files and one for persistent data:
