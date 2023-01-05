@@ -8,12 +8,11 @@ Entrypoint is ``entrypoint.bash`` BASH script executing following actions:
 ## Configuration
 Custom basic configuration file provided as parameter to ``nginx`` sets only
 ``worker_processes``, ``pcre_jit``, ``error_log`` directives and then includes
-following configuration files
+following configuration files as contexts configuration
 * ``/usr/local/etc/nginx/conf.d/events``
 * ``/usr/local/etc/nginx/conf.d/http``
 * ``/usr/local/etc/nginx/conf.d/stream``
 
-as contexts configuration.
 This directory is volume and it should be mount in Read-Only mode.
 
 With above in mind it's obvious that all configuration is expected to be provided
