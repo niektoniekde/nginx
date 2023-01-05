@@ -12,6 +12,7 @@ following configuration files in directory ``/usr/local/etc/nginx/conf.d``
 * ``events``
 * ``http``
 * ``stream``
+
 as contexts configuration.
 This directory is volume and it should be mount in Read-Only mode.
 
