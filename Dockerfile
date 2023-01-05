@@ -2,6 +2,8 @@ FROM docker.io/alpine:latest
 
 # install nginx and bash packages
 RUN apk --no-cache add nginx bash
+# address CVE-2022-3996
+RUN apk upgrade libssl3 libcrypto3
 
 # prepare local configuration structure
 RUN mkdir -p /usr/local/etc/nginx/conf.d
