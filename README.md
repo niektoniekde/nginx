@@ -26,7 +26,7 @@ There are two volumes by default, one for configuration files and one for persis
 * ``/usr/local/etc/nginx/conf.d`` - configuration files
 * ``/srv/data`` - persistent data
 
-## Conexts configuration examples
+## Contexts configuration examples
 ### events
 ```
 events {
@@ -66,4 +66,3 @@ http {
   include /usr/local/etc/nginx/conf.d/http_*.conf;
 }
 ```
-
